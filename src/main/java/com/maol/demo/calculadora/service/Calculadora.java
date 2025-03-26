@@ -14,6 +14,12 @@ public class Calculadora {
 		return parametroNumero1 * parametroNumero2;
 	}
 
+	public void sumaV2(int parametro1, int parametro2) {
+		int resultado = parametro1 + parametro2;
+
+		System.out.println("sumaV2 = " + resultado);
+
+	}
 
 	public static void main(String[] args) {
 		Calculadora calculadora = new Calculadora();
@@ -26,6 +32,7 @@ public class Calculadora {
 		System.out.println(calculadora.resta(2, 2));
 		System.out.println(calculadora.resta(parametroNumero1, parametroNumero2));
 
+		calculadora.sumaV2(parametroNumero1, parametroNumero2);
 	}
 
 }
